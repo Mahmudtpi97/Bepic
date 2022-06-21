@@ -1,0 +1,367 @@
+
+
+@font-face {font-family: "HelveticaW01-Bold";
+ src: url("../fonts/Helvetica W01 Bold.ttf"); 
+}
+body{
+	font-family: HelveticaW01-Bold;
+}
+
+.header-area {
+	background: rgb(0,0,0);
+	padding: 2rem 0;
+	text-align: center;
+}
+
+.header-text h2{
+	 font-size:25px;
+	 color:rgb(255, 255, 255);
+}
+.header-text h5{
+	 font-size:18px;
+	 color:#02B529;
+}
+
+.product-overview-area {
+	margin:2rem 0;
+}
+
+.overview-header h3 {
+	font-size: 40px;
+	margin: 2rem 0;
+	text-align: center;
+}
+
+.overview-video-area {
+	height: 300px;
+	border: 7px solid #fff;
+	box-shadow: 0px 0px 1px #000;
+	position: relative;
+	z-index: 2;
+}
+.overview-video-area iframe{
+	/*position: absolute;*/
+	width: 100%;
+	height: 100%;
+}
+
+.overview-product-button-area {
+	background: #02b529;
+	height: 300px;
+	position: relative;
+	margin-top: -11rem;
+}
+.overview-product-button {
+	position: absolute;
+	bottom: 10%;
+	text-align: center;
+	width: 100%;
+}
+
+.overview-product-button a {
+	background: #000;
+	padding: 1rem 2rem;
+	font-size: 35px;
+	color: #fff;
+	text-decoration: none;
+	box-sizing: ;
+	box-shadow: 0 0 .3rem #000;
+	transition:1s;
+}
+.overview-product-button a:hover{
+	background:#fff;
+	color:#000;
+}
+
+/*Pill Area*/
+.pill-img {
+	text-align: center;
+	margin-top: 5rem;
+}
+.pill-single-img {
+	margin: 2rem 0;
+	text-align: center;
+}
+
+
+.second-overview-video-area {
+	height: 300px;
+	border: 7px solid #fff;
+	box-shadow: 0px 0px 1px #000;
+	position: relative;
+}
+.second-overview-video-area iframe{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.second-product-overview h3{
+	margin:0;
+}
+.overview-header p {
+	font-size: 14px;
+	text-align: center;
+	line-height: 2.5;
+}
+.second-overview-product-button{
+	display: flex;
+	justify-content: center;
+	margin-top:2rem;
+}
+.second-overview-product-button a {
+	background: #000;
+	padding:.5rem 1.5rem;
+	font-size: 25px;
+	color: #fff;
+	text-decoration: none;
+	box-sizing: ;
+	box-shadow: 0 0 .3rem #000;
+	transition:1s;
+}
+.second-overview-product-button a:hover{
+	background:#fff;
+	color:#000;
+}
+
+.second-product-overview-area{
+   position: relative;
+   padding-bottom:2rem;
+}
+.second-product-overview-area:after{
+	position:absolute;
+	content: "";
+	bottom:0;
+	left:0;
+	width:100%;
+	height:250px;
+	background:#02b529;
+	z-index:-1;
+}
+
+/*Footer Area*/
+.footer-area {
+	padding: 1rem 0;
+}
+
+.footer-navber .nav{
+	justify-content:flex-end;
+}
+.footer-navber li a {
+	font-size: 17px;
+	color: #000;
+	margin-left: 2rem;
+	text-decoration: none;
+	transition:.5s;
+}
+.footer-navber li a:hover{
+ 	color:#02b529;
+ }
+
+.dropdown-link {
+	position: absolute;
+	display: none;
+	bottom: 90%;
+	background: #fff;
+	padding: .5rem;
+	width: 120px;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+.dropdown:hover .dropdown-link{
+ 	display:block;
+ }
+.dropdown-link .nav{
+	flex-direction:column;
+}
+.dropdown-link li a{
+	margin-left:0 !important;
+}
+
+ .footer-logo {
+	float: right;
+	display: flex;
+	align-items: center;
+}
+.footer-logo a i {
+	font-size: 2rem;
+	margin-left: 1rem;
+	color: #000;
+}
+
+
+/*Responsive  Area*/
+@media all and (max-width: 1200px){
+
+ .overview-header h3 {
+	font-size: 30px;
+}
+.overview-video-area {
+	height: 260px;
+}
+
+.pill-img img {
+	width: 100%;
+}
+
+.second-overview-product-button a {
+	font-size: 20px;
+}
+
+
+}
+
+
+@media all and (max-width: 991px){
+  
+  .overview-header h3 {
+	 font-size: 25px;
+   }
+.overview-video-area {
+	height: 195px;
+}
+.second-overview-video-area {
+	height: 195px;
+}
+.overview-product-button a {
+	font-size: 30px;
+}
+
+.overview-header p {
+	font-size: 11px;
+}
+
+ .footer-navber .nav {
+	justify-content: flex-start;
+}
+ .footer-navber li a {
+	margin-left: .8rem;
+}
+
+}
+
+@media all and (max-width: 767px){
+
+.overview-video-area {
+	height:295px;
+}
+.second-overview-video-area {
+	height: 280px;
+	margin:auto;
+}
+
+.single-overview {
+	margin: 1rem auto;
+}
+.second-overview-product-button {
+	margin-bottom: 2rem;
+}
+.overview-header h3 {
+	font-size: 35px;
+}
+.overview-header p {
+	font-size: 14px;
+}
+.single-pill-img {
+	margin: 0;
+}
+
+.footer {
+	flex-direction: column;
+	padding-top: 1rem;
+}
+.footer-navber .nav {
+	justify-content: center;
+}
+
+.footer-logo {
+	 float: none; 
+	 justify-content: center;
+	 padding-top:2rem;
+}
+
+}
+
+@media all and (max-width: 767px){
+
+  .header-text h5 {
+	font-size: 16px;
+}
+.overview-header h3 {
+	font-size: 20px;
+}
+
+.product-overview-area {
+	margin: 0;
+}
+
+.overview-text {
+	top: 20%;
+}
+.overview-text h3 {
+	font-size: 12px;
+	margin:0;
+}
+.overview-text i {
+	font-size:1rem;
+	padding: 1rem;
+	width:30px;
+	height:30px;
+}
+
+.overview-product-button-area {
+	height: 200px;
+	margin-top: -8rem;
+}
+.overview-product-button {
+	bottom:15%;
+}
+.overview-product-button a {
+	font-size: 13px;
+}
+
+.pill-img {
+	margin-top: 3rem;
+}
+
+.overview-header p {
+	font-size: 12px;
+	line-height: 2;
+}
+
+.second-product-overview-area{
+	padding:0;
+}
+.second-product-overview-area::after {
+	bottom:4%;
+}
+
+.second-overview-product-button {
+	margin-bottom: 3rem;
+}
+
+.footer-navber li a {
+	margin-right: 1rem;
+	margin-left: 0;
+	font-size:12px;
+}
+
+.dropdown-link {
+	bottom: 65%;
+	width: 85px;
+	left: -25%;
+}
+
+
+}
+
+@media all and (max-width: 575px){
+
+.overview-video-area, .second-overview-video-area{
+	height: 200px;
+	width: 300px;
+	margin: auto;
+}
+
+
+}
